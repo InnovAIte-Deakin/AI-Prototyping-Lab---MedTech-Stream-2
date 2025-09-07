@@ -16,6 +16,7 @@ class InterpretRequest(BaseModel):
 
 
 @router.post("/interpret")
+#EXPLAIN BUTTON MAGIC STARTS HERE
 async def interpret_endpoint(payload: InterpretRequest) -> Dict[str, Any]:
     rows = payload.rows or []
     if not rows:
