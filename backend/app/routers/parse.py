@@ -18,6 +18,7 @@ class ParseRequest(BaseModel):
 
 
 @router.post("/parse")
+#This is where the parsing begins. The endpoint is called by the frontend when the user uploads a PDF or a JSON file.
 async def parse_endpoint(request: Request, file: UploadFile | None = File(default=None)) -> Dict[str, Any]:
     content_type = request.headers.get("content-type", "").lower()
 

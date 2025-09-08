@@ -23,7 +23,8 @@ ReportRx is an educational health explanations app. MVP stores no data and logs 
 ## Environment
 
 - FRONTEND_URL: `http://localhost:3000` (CORS origin)
-- NEXT_PUBLIC_BACKEND_URL: `http://localhost:8000`
+- NEXT_PUBLIC_BACKEND_URL: `http://localhost:8000` (browser → backend)
+- INTERNAL_BACKEND_URL: `http://backend:8000` (server-side in frontend container → backend)
 - OPENAI_API_KEY: Optional. If unset or network blocked, backend uses deterministic fallback JSON.
 
 ## Test/Run Instructions
